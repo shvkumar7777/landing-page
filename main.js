@@ -1,6 +1,8 @@
-import './style.css'
+const mobileNav = document.querySelector('.mobile-nav-toggle');
+const primaryNav = document.querySelector('.primary-navigation');
 
-document.querySelector('#app').innerHTML = `
-  <h1>Hello Vite!</h1>
-  <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a>
-`
+mobileNav.addEventListener('click',()=>{
+  // primaryNav.classList.toggle('opened');
+  primaryNav.toggleAttribute('data-visible');
+
+})
